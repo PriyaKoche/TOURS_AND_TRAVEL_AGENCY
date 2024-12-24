@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Design Mastery | TravelDream</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="#" class="logo">Journey<span>On</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#destination">Destinations</a></li>
+            <li><a href="#package">Packages</a></li>
+            <li><a href="#client">Clients</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="home">
+        <div class="section__container header__container">
+            <h1>EVERY DESTINATION<br /><span>IS A NEW BEGINNING</span></h1>
+            <P>Create Memories That Last</P>
+            <form action="/">
+                <div class="input__group">
+                    <span><i class="ri-map-2-fill"></i></span>
+                    <input type="text" placeholder="What's your next destination?" />
+                </div>
+                <div class="input__group">
+                    <span><i class="ri-map-pin-2-fill"></i></span>
+                    <input type="text" placeholder="Location" />
+                </div>
+                <div class="input__group">
+                    <span><i class="ri-list-ordered-2"></i></span>
+                    <input type="text" placeholder="Journey Type" />
+                </div>
+                <div class="input__group">
+                    <button class="btn">Search</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <section class="section__container feature__container" id="service">
+        <div class="feature__card">
+            <img src="images/feature-1.png" alt="feature">
+            <div>
+                <h4>Dream Escapes</h4>
+                <p>Uncover the magic of breathtaking destinations worldwide.</p>
+            </div>
+        </div>
+        <div class="feature__card">
+            <img src="images/feature-2.png" alt="feature">
+            <div>
+                <h4>Guaranteed Value Deals</h4>
+                <p>Unlock the best deals for all your travel needs.</p>
+            </div>
+        </div>
+        <div class="feature__card">
+            <img src="images/feature-3.png" alt="feature">
+            <div>
+                <h4>Immediate Booking</h4>
+                <p>Plan your perfect trip with a single click.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+        <div class="section__container destination__container">
+            <h2 class="section__header">TOP DESTINATION</h2>
+            <p class="section__description">
+                Experience the magic of the world’s most celebrated travel spots.
+            </p>
+            <div class="destination__grid">
+                <div class="destination__card">
+                    <img src="images/destination-1.jpg" alt="destination">
+                    <div class="destination__content">Bhutan</div>
+                </div>
+                <div class="destination__card">
+                    <img src="images/destination-2.jpg" alt="destination">
+                    <div class="destination__content">Japan</div>
+                </div>
+                <div class="destination__card">
+                    <img src="images/destination-3.jpg" alt="destination">
+                    <div class="destination__content">Nepal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="discount">
+        <div class="section__container discount__container">
+            <h2>
+                Unlock up to 60% savings<br/><span>when you join us ahead of summer!</span>
+            </h2>
+            <div class="discount__btn">
+                <button class="btn">Join Us</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container package__container" id="package">
+        <h2 class="section__header">Exclusive Packages</h2>
+        <p class="section__description">
+            Your perfect trip is just a step away—let us help you find it!
+        </p>
+        <div class="package__grid">
+            <div class="package__card">
+                <img src="images/package-1.jpg" alt="package">
+                <div class="package__card__details">
+                    <h4>Maldives City Tour</h4>
+                    <p>
+                        The Maldives offers a tropical paradise with crystal-clear waters, overwater bungalows, and vibrant coral reefs, perfect for a luxurious getaway.
+                    <div>
+                        <button class="btn">Book Now</button>
+                        <h3>$150</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package__card">
+                <img src="images/package-2.jpg" alt="package">
+                <div class="package__card__details">
+                    <h4>Europe City Tour</h4>
+                    <p>
+                        Europe is a diverse continent rich in history, culture, and stunning landscapes, offering something for every type of traveler.
+                    </p>
+                    <div>
+                        <button class="btn">Book Now</button>
+                        <h3>$170</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package__card">
+                <img src="images/package-3.jpg" alt="package">
+                <div class="package__card__details">
+                    <h4>Barcelona City Tour</h4>
+                    <p>
+                        Barcelona is a vibrant city known for its unique architecture, beautiful beaches, and rich cultural heritage.
+                    <div>
+                        <button class="btn">Book Now</button>
+                        <h3>$190</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+        <h2 class="section__header">Client Experiences</h2>
+        <p class="section__description">
+            Let us make your travel dreams come true, just like we have for countless others.
+        </p>
+
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      
+      
+      <div class="swiper-slide">
+        <div class="client__card">
+            <img src="images/client-1.jpg" alt="client">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                Perfect solo trip to Japan—great local guides and a safe, enjoyable experience. Can’t wait to book again!
+            </p>
+            <h4>Michael Lee</h4>
+            <h5>Software Engineer</h5>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="client__card">
+            <img src="images/client-2.jpg" alt="client">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                Our European trip was seamless, with personalized itineraries and excellent local guides. Highly recommended!
+            </p>
+            <h4>Sophia Grace</h4>
+            <h5>Systems Analyst</h5>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="client__card">
+            <img src="images/client-3.jpg" alt="client">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                As first-time travelers, this agency made our trip easy and stress-free. Highly confident for future trips!
+            </p>
+            <h4>James Ryan</h4>
+            <h5>Photographer</h5>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="client__card">
+            <img src="images/client-4.jpg" alt="client">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                Great family trip to Disney World! Stress-free, fun, and thoughtful planning. Highly recommend!
+            </p>
+            <h4>Emma Rose</h4>
+            <h5>Financial Analyst</h5>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="client__card">
+            <img src="images/client-5.jpg" alt="client">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                The Maldives trip was pure luxury—private villas, exclusive excursions, and perfect planning!
+            </p>
+            <h4>Daniel Gray</h4>
+            <h5>Data Scientist</h5>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="section__container subscribe__container">
+            <h2>Don’t miss out! Subscribe to our newsletter to stay updated.</h2>
+            <div>
+                <p>Get the best suggestions delivered to you—don't forget to subscribe!</p>
+                <form action="/"></form>
+                <input type="text" placeholder="Enter Your Email Here">
+                <button class="btn">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Journey<span>On</span></a>
+                </div>
+                <p>
+                    Begin your journey to uncover the charm of the world’s most enchanting places.
+                </p>
+                <h4>CONNECT WITH US</h4>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-google-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>DESTINATIONS</h4>
+                <ul class="footer__links">
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">Venezuela</a></li>
+                    <li><a href="#">Brazil</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">London</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4>OUR ACTIVITIES</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Trekking</a></li>
+                    <li><a href="#">Peak Climbing</a></li>
+                    <li><a href="#">Biking</a></li>
+                    <li><a href="#">River Rafting</a></li>
+                    <li><a href="#">Cultural Tour</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bar">
+            Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
